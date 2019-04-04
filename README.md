@@ -17,6 +17,7 @@ Reforecasts and operational forecasts are obtained from four models:
 ### NCEP
 1.	Use “get_ncep_operational.ksh” to download and process NCEP operational forecasts from the NCEP HTTP site.
 2.	Use “get_ncep_hindcasts.ksh” to download and process NCEP re-forecasts from the NCEP HTTP site.  NCEP use a fixed reforecast set, so you need to do this only once per re-forecast set.
+3. Use "hindcasts_make_ensmeans_ts.ksh" to process the NCEP re-forecasts to create timeseries of ensemble means, which are read by the python code that produces the Climate Outlooks.  The shell script takes a single argument of the re-forecast start date (MMDD).
 
 ### ECMWF and Meteo-France
 1.	Use “get_copernicus_dfid.py” to download ECMWF and Meteo-France data from the CDS.
