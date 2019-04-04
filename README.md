@@ -26,3 +26,12 @@ Reforecasts and operational forecasts are obtained from four models:
 5.	Use “compute_mmeans_anoms_c3.ksh” to process forecast and re-forecast data into monthly means and ensemble means.
 
 NB: The KSH scripts above all take various arguments, which are commented in the code.
+
+## Dependencies
+
+* Python packages:
+  * salem (for country averaging): https://salem.readthedocs.io/en/v0.2.3/
+  * cf-python (for plotting maps): https://cfpython.bitbucket.io/
+  * cf-plot (for plotting maps): http://ajheaps.github.io/cf-plot
+* Fortran:
+  * fix_netcdf_dimension_monotonic (for overwriting netCDF coordinate variables) - included in repository but needs to be compiled on your system.
